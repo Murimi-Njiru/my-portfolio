@@ -1,6 +1,7 @@
 <template>
-  <div id="app">
-    <div class="w-full min-h-screen">
+  <div id="app" class="w-full overflow-x-hidden">
+    <div class="min-h-screen w-full">
+      <NavigationBar />
       <HeroSection />
       <WorkExperienceSection />
       <SkillsSection />
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+  import NavigationBar from './components/NavigationBar.vue';
   import HeroSection from './components/sections/HeroSection.vue';
   import SkillsSection from './components/sections/SkillsSection.vue';
   import WorkExperienceSection from './components/sections/WorkExperienceSection.vue';
@@ -18,6 +20,7 @@
   export default {
     name: 'App',
     components: {
+      NavigationBar,
       HeroSection,
       WorkExperienceSection,
       SkillsSection
